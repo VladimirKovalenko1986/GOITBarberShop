@@ -5,36 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header site -->
-    <header>
-      <a href="./index.html"
+    <header class="header">
+      <a href="./index.html" class="header-logo"
         ><img src="./images/logo.svg" alt="logo BarberShop"
       /></a>
-      <nav>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item"><a href="">About</a></li>
+          <li class="header-item"><a href="">Services and prices</a></li>
+          <li class="header-item"><a href="">Barbers</a></li>
+          <li class="header-item"><a href="">Contacts</a></li>
         </ul>
       </nav>
       <!-- Contact -->
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a href="tel:+380441111111" class="header-contact">+38 044 111 11 11</a>
+      <button type="button" class="header-button">Online-booking</button>
     </header>
 
-    <main>
+    <main class="main">
       <!-- Hero -->
-      <section>
-        <ul>
-          <li><a href="" rel="noopener norefferer nofollow">Youtube</a></li>
-          <li><a href="" rel="noopener norefferer nofollow">Instagram</a></li>
+      <section class="hero">
+        <ul class="hero-social">
+          <li class="social-item">
+            <a href="" rel="noopener norefferer nofollow">Youtube</a>
+          </li>
+          <li class="social-item">
+            <a href="" rel="noopener norefferer nofollow">Instagram</a>
+          </li>
         </ul>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
+        <p class="hero-pre-titel">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-description">
           We are experts in trendy men’s haircuts. We work quickly, carefully
           and with style.
         </p>
@@ -153,7 +164,7 @@
           </li>
         </ul>
         <p>Old traditional school</p>
-        <h2>¿Why people come to us?</h2>
+        <h2>&#191;Why people come to us?</h2>
         <p>
           Only good things are said about us. But it's better to see and feel 1
           time than read 10 times.
@@ -357,7 +368,7 @@
       </address>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>&#169;Copyright 2020</p>
       <ul>
         <li><a href="" rel="noopener norefferer nofollow">Youtube</a></li>
