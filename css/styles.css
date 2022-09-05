@@ -5,21 +5,294 @@
 можно применить для скидание всех отступов margin , pading*/
 
 :root {
-  --third-color-text: #FFFFFF;
   --focus-color-text: #FF6C00;
-  
+  --color-primery-text: #555555;
+  --color-secondary-text: #303030;
+  --color-third-text: #FFFFFF;
+  --color-fourth-text: rgba(157, 164, 189, 0.6);
+  --color-fifth-text: #9DA4BD;
 }
 
 .list {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--focus-color-text);
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: 1px;
+}
+
+.btn {
+  font-family: inherit;
+  border: 1px solid var(--focus-color-text);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+  color: var(--color-primery-text);
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.02em; 
 }
+
+
+/* Header */
 
 .header {
+  background-color: black;
 }
 
-/* Добавояем в класс через пробел там где хотим сделать что-то которое будет
-применятся много раз, например убираем цяточки или можно задать убирание подчекивания */
+.header-link, 
+.header-contact {
+  color: var(--color-third-text);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+}
+
+.primery-btn {
+  background-color: black;
+  color: var(--color-third-text);
+}
+
+/* Maine */
+/* Hero */
+
+.hero {
+  background-color: black;
+}
+
+.hero-link {
+  color: var(--color-secondary-text);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.hero-pre-titel {
+  color: var(-color-fourth-text);
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-third-text);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.hero-text {
+  color: var(--color-fifth-text);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Aboute */
+
+.about-text {
+  color: var(--color-secondary-text);
+  text-transform: uppercase;
+}
+.about-title {
+  color: var(--color-secondary-text);
+}
+
+.about-pre-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.secondary-btn {
+  color: var(--color-secondary-text);
+}
+
+/* Price */
+
+.price {
+  background-color: #303030;
+}
+
+.price-text {
+  color: var(--color-fourth-text);
+  text-transform: uppercase;
+}
+
+.price-title {
+  color: var(--color-third-text);
+}
+
+.price-pre-text {
+  color: var(--color-fifth-text);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Reviews */
+
+.reviews-item span {
+  color: var(--color-secondary-text);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
+
+.reviews-item sup {
+  color: var(--focus-color-text);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.reviews-text {
+  color: var(--color-secondary-text);
+}
+
+.reviews-pre-text {
+  color: var(--color-secondary-text);
+  text-transform: uppercase;
+}
+
+.reviews-title {
+  color: var(--color-secondary-text);
+}
+
+.reviews-secondary-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Masters */
+
+.master-text {
+  color: var(--color-secondary-text);
+  text-transform: uppercase;
+}
+
+.master-title {
+  color: var(--color-secondary-text);
+}
+
+.master-pre-title {
+  color: var(--color-secondary-text);
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.master-pre-text {
+  color: var(--focus-color-text);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Work */
+
+.work-text {
+  color: var(--color-secondary-text);
+  text-transform: uppercase;
+}
+
+
+/* Feedback */
+.feedbak {
+  background-color: #303030;
+}
+
+.feedbak-title {
+  color: var(--color-third-text);
+}
+
+/* Contacts */
+
+.contacts {
+  background-color: #303030;
+}
+
+.contacts-title {
+  color: var(--color-third-text);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-link {
+  color: var(--color-fifth-text);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.contacts-item:first-child {
+  font-weight: 700;
+  /* Ставим для первого ребенка */
+}
+
+.contacts-item:last-child {
+  text-decoration: underline;
+  /* Добавляем последнему элементу подчеркивание */
+}
+
+.contacts-text {
+  color: var(--color-third-text);
+  text-transform: uppercase;
+}
+
+.contacts-pre-text {
+  color: var(--color-fifth-text);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Footer */
+
+.footer-text {
+  color: var(--color-fifth-text);
+}
+
+.footer-link {
+  color: var(--color-secondary-text);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+}
