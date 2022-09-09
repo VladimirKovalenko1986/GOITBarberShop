@@ -64,6 +64,22 @@
   text-transform: uppercase;
 }
 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+ul,
+p {
+  margin: 0;
+  /* Убираем все отступы */
+}
+
+ul {
+  padding-left: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--color-primery-text);
