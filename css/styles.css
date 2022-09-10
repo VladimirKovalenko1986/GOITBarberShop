@@ -5,12 +5,12 @@
 можно применить для скидание всех отступов margin , pading*/
 
 :root {
-  --focus-color-text: #FF6C00;
+  --focus-color-text: #ff6c00;
   --color-primery-text: #555555;
   --color-secondary-text: #303030;
-  --color-third-text: #FFFFFF;
+  --color-third-text: #ffffff;
   --color-fourth-text: rgba(157, 164, 189, 0.6);
-  --color-fifth-text: #9DA4BD;
+  --color-fifth-text: #9da4bd;
 }
 
 .list {
@@ -33,7 +33,7 @@
 }
 
 .title {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
@@ -69,9 +69,8 @@ body {
   color: var(--color-primery-text);
   font-size: 14px;
   line-height: 1.9;
-  letter-spacing: 0.02em; 
+  letter-spacing: 0.02em;
 }
-
 
 /* Header */
 
@@ -79,7 +78,7 @@ body {
   background-color: black;
 }
 
-.header-link, 
+.header-link,
 .header-contact {
   color: var(--color-third-text);
   font-weight: 600;
@@ -232,7 +231,6 @@ body {
   color: var(--color-secondary-text);
   text-transform: uppercase;
 }
-
 
 /* Feedback */
 .feedbak {
