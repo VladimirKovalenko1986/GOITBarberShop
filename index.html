@@ -11,35 +11,41 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header site -->
     <header class="header">
-      <a href="./index.html" class="header-logo"
-        ><img src="./images/logo.svg" alt="logo BarberShop"
-      /></a>
-      <nav class="header-nav">
-        <ul class="header-list list">
-          <li class="header-item">
-            <a href="" class="header-link link">About</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link link">Services and prices</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link link">Barbers</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Contact -->
-      <a href="tel:+380441111111" class="header-contact link"
-        >+38 044 111 11 11</a
-      >
-      <button type="button" class="primery-btn btn">Online-booking</button>
+      <div class="conteiner">
+        <a href="./index.html" class="header-logo"
+          ><img src="./images/logo.svg" alt="logo BarberShop"
+        /></a>
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="" class="header-link link">About</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Services and prices</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Barbers</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contact -->
+        <a href="tel:+380441111111" class="header-contact link"
+          >+38 044 111 11 11</a
+        >
+        <button type="button" class="primery-btn btn">Online-booking</button>
+      </div>
     </header>
 
     <main class="main">
@@ -65,12 +71,14 @@
             >
           </li>
         </ul>
-        <p class="hero-pre-titel pre-title">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-text">
-          We are experts in trendy men’s haircuts. We work quickly, carefully
-          and with style.
-        </p>
+        <div class="hero-wrapper">
+          <p class="hero-pre-titel pre-title">A hair salon for men in Kyiv</p>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-text">
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style.
+          </p>
+        </div>
 
         <div>
           <a href="">Back</a>
