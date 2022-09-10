@@ -63,7 +63,7 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
-
+/* Применяем для все указаных элементов */
 h1, 
 h2, 
 h3, 
@@ -74,6 +74,10 @@ ul,
 p {
   margin: 0;
   /* Убираем все отступы */
+}
+
+* {
+  outline: 1px solid tomato;
 }
 
 ul {
@@ -88,11 +92,18 @@ body {
   letter-spacing: 0.02em; 
 }
 
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* Header */
 
 .header {
   background-color: black;
+  padding-top: 31px;
 }
 
 .header-link, 
@@ -124,9 +135,14 @@ body {
   text-transform: uppercase;
 }
 
+.hero-wrapper {
+  padding: 272px 0 208px 100px;
+}
+
 .hero-pre-titel {
   color: var(-color-fourth-text);
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -136,12 +152,14 @@ body {
   font-size: 72px;
   line-height: 1.2;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 
 .hero-text {
   color: var(--color-fifth-text);
   font-size: 18px;
   line-height: 1.7;
+  max-width: 357px;
 }
 
 /* Aboute */
