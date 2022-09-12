@@ -20,7 +20,7 @@
   <body>
     <!-- Header site -->
     <header class="header">
-      <div class="conteiner">
+      <div class="conteiner header-conteiner">
         <a href="./index.html" class="header-logo"
           ><img src="./images/logo.svg" alt="logo BarberShop"
         /></a>
@@ -41,86 +41,99 @@
           </ul>
         </nav>
         <!-- Contact -->
-        <a href="tel:+380441111111" class="header-contact link"
-          >+38 044 111 11 11</a
-        >
-        <button type="button" class="primery-btn btn">Online-booking</button>
+        <div class="contacts-wrap">
+          <!-- контейнер-обгордка -->
+          <a href="tel:+380441111111" class="header-contact link"
+            >+38 044 111 11 11</a
+          >
+          <button type="button" class="primery-btn btn">Online-booking</button>
+        </div>
       </div>
     </header>
 
     <main class="main">
       <!-- Hero -->
       <section class="hero">
-        <ul class="hero-list list">
-          <li class="hero-item">
-            <a
-              href=""
-              target="_blank"
-              rel="noopener norefferer nofollow"
-              class="hero-link link"
-              >Youtube</a
-            >
-          </li>
-          <li class="hero-item">
-            <a
-              href=""
-              target="_blank"
-              rel="noopener norefferer nofollow"
-              class="hero-link link"
-              >Instagram</a
-            >
-          </li>
-        </ul>
-        <div class="hero-wrapper">
-          <p class="hero-pre-titel pre-title">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-text">
-            We are experts in trendy men’s haircuts. We work quickly, carefully
-            and with style.
-          </p>
-        </div>
+        <div class="conteiner hero-conteiner">
+          <ul class="hero-list list">
+            <li class="hero-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener norefferer nofollow"
+                class="hero-link link"
+                >Youtube</a
+              >
+            </li>
+            <li class="hero-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener norefferer nofollow"
+                class="hero-link link"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+          <div class="hero-wrapper">
+            <p class="hero-pre-titel pre-title">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-text">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
 
-        <div>
-          <a href="">Back</a>
-          <a href="">Forward</a>
+          <div>
+            <!-- <a href="">Back</a>
+            <a href="">Forward</a> -->
+          </div>
+          <!-- Пока пропустим -->
         </div>
-        <!-- Пока пропустим -->
       </section>
 
       <!-- About -->
       <section class="about">
-        <ul class="about-list list">
-          <li class="about-item">
-            <img
-              src="./images/photobeard.jpg"
-              alt="photo man beard"
-              width="270"
-              class="about-img"
-            />
-          </li>
-          <li class="about-item">
-            <img
-              src="./images/photohead.jpg"
-              alt="photo man head"
-              width="270"
-              class="about-img"
-            />
-          </li>
-        </ul>
-        <p class="about-text pre-title">About</p>
-        <h2 class="about-title title">Best Barbershop in your city</h2>
-        <p class="about-pre-text">
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p class="about-secondary-text">
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
-        <button type="button" class="secondary-btn btn">Online-booking</button>
+        <div class="conteiner about-conteiner">
+          <div class="conteiner-about-img">
+            <ul class="about-list list">
+              <li class="about-item">
+                <img
+                  src="./images/photobeard.jpg"
+                  alt="photo man beard"
+                  width="270"
+                  class="about-img"
+                />
+              </li>
+              <li class="about-item">
+                <img
+                  src="./images/photohead.jpg"
+                  alt="photo man head"
+                  width="270"
+                  class="about-img"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="conteiner-about-text">
+            <p class="about-text pre-title">About</p>
+            <h2 class="about-title title">Best Barbershop in your city</h2>
+            <p class="about-pre-text">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about-secondary-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="secondary-btn btn">
+              Online-booking
+            </button>
+          </div>
+        </div>
       </section>
       <!-- Price -->
       <section class="price">
@@ -214,149 +227,121 @@
 
       <!-- Masters -->
       <section class="master">
-        <p class="master-text pre-title">For true enjoyers of the atmosphere</p>
-        <h2 class="master-title title">Our barbers</h2>
+        <div class="conteiner">
+          <p class="master-text pre-title">
+            For true enjoyers of the atmosphere
+          </p>
+          <h2 class="master-title title">Our barbers</h2>
 
-        <ul class="master-list list">
-          <li class="master-item">
-            <img
-              src="./images/photomaster1.jpg"
-              alt="photo master john"
-              width="370"
-              class="master-img"
-            />
-            <h3 class="master-pre-title">John Smith</h3>
-            <p class="master-pre-text">Extreme Barber</p>
-            <ul class="master-list-icon list">
-              <li class="master-item-icon">
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconinstagram.svg"
-                    alt="icon instagram"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li class="master-item-icon">
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/icontwitter.svg"
-                    alt="icon twitter"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li class="master-item-icon">
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconfacebook.svg"
-                    alt="icon facebook"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li class="master-item-icon">
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconlinkedin.svg"
-                    alt="icon linkedin"
-                    class="master-img-icon"
-                /></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="master-list list">
+            <li class="master-item">
+              <img
+                src="./images/photomaster1.jpg"
+                alt="photo master john"
+                width="370"
+                height="346"
+                class="master-img"
+              />
+              <h3 class="master-pre-title">John Smith</h3>
+              <p class="master-pre-text">Extreme Barber</p>
+              <!-- <a href="" class="master-link"
+                    ><img
+                      src="./images/iconinstagram.svg"
+                      alt="icon instagram"
+                      class="master-img-icon"
+                  /></a>
+                  <a href="" class="master-link"
+                    ><img
+                      src="./images/icontwitter.svg"
+                      alt="icon twitter"
+                      class="master-img-icon"
+                  /></a>
+                    ><img
+                      src="./images/iconfacebook.svg"
+                      alt="icon facebook"
+                      class="master-img-icon"
+                  /></a>
+                  <a href="" class="master-link"
+                    ><img
+                      src="./images/iconlinkedin.svg"
+                      alt="icon linkedin"
+                      class="master-img-icon"
+                  /></a> -->
+            </li>
 
-        <ul class="master-list list">
-          <li class="master-item">
-            <img
-              src="./images/photomaster2.jpg"
-              alt="photo master michele"
-              width="370"
-              class="master-img"
-            />
-            <h3 class="mater-pre-title">Michele Doe</h3>
-            <p class="master-pre-text">Extreme Barber</p>
-            <ul class="master-list-icon list">
-              <li class="master-item-icon">
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconinstagram.svg"
-                    alt="icon instagram"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/icontwitter.svg"
-                    alt="icon twitter"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconfacebook.svg"
-                    alt="icon facebook"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconlinkedin.svg"
-                    alt="icon linkedin"
-                    class="master-img-icon"
-                /></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            <li class="master-item">
+              <img
+                src="./images/photomaster2.jpg"
+                alt="photo master michele"
+                width="370"
+                height="346"
+                class="master-img"
+              />
+              <h3 class="mater-pre-title">Michele Doe</h3>
+              <p class="master-pre-text">Extreme Barber</p>
+              <!-- <a href="" class="master-link"
+                    ><img
+                      src="./images/iconinstagram.svg"
+                      alt="icon instagram"
+                      class="master-img-icon"
+                  /></a>
+                  <a href="" class="master-link"
+                    ><img
+                      src="./images/icontwitter.svg"
+                      alt="icon twitter"
+                      class="master-img-icon"
+                  /></a>
+                  <a href="" class="master-link"
+                    ><img
+                      src="./images/iconfacebook.svg"
+                      alt="icon facebook"
+                      class="master-img-icon"
+                  /></a>
+                  <a href="" class="master-link"
+                    ><img
+                      src="./images/iconlinkedin.svg"
+                      alt="icon linkedin"
+                      class="master-img-icon"
+                  /></a> -->
+            </li>
 
-        <ul class="master-list list">
-          <li class="master-item">
-            <img
-              src="./images/photomaster3.jpg"
-              alt="photo master alan"
-              width="370"
-              class="master-img"
-            />
-            <h3 class="mater-pre-title">Alan Black</h3>
-            <p class="master-pre-text">Extreme Barber</p>
-            <ul class="master-list-icon list">
-              <li class="master-item-icon">
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconinstagram.svg"
-                    alt="icon instagram"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/icontwitter.svg"
-                    alt="icon twitter"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconfacebook.svg"
-                    alt="icon facebook"
-                    class="master-img-icon"
-                /></a>
-              </li>
-              <li>
-                <a href="" class="master-link"
-                  ><img
-                    src="./images/iconlinkedin.svg"
-                    alt="icon linkedin"
-                    class="master-img-icon"
-                /></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            <li class="master-item">
+              <img
+                src="./images/photomaster3.jpg"
+                alt="photo master alan"
+                width="370"
+                height="346"
+                class="master-img"
+              />
+              <h3 class="mater-pre-title">Alan Black</h3>
+              <p class="master-pre-text">Extreme Barber</p>
+              <!-- <a href="" class="master-link"
+                ><img
+                  src="./images/iconinstagram.svg"
+                  alt="icon instagram"
+                  class="master-img-icon"
+              /></a>
+              <a href="" class="master-link"
+                ><img
+                  src="./images/icontwitter.svg"
+                  alt="icon twitter"
+                  class="master-img-icon"
+              /></a>
+              <a href="" class="master-link"
+                ><img
+                  src="./images/iconfacebook.svg"
+                  alt="icon facebook"
+                  class="master-img-icon"
+              /></a>
+              <a href="" class="master-link"
+                ><img
+                  src="./images/iconlinkedin.svg"
+                  alt="icon linkedin"
+                  class="master-img-icon"
+              /></a> -->
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Work -->
