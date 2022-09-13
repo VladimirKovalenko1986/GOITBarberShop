@@ -220,33 +220,43 @@ body {
   padding: 120px 0;
 }
 
-.about-conteiner {
+.about-wrapper {
   display: flex;
-}
-
-.conteiner-about-img {
-  /* display: flex; */
-}
-
-.conteiner-about-text {
-  /* display: flex; */
+  /* Добавляем для того чтобы
+   в контейнете постввить на одной стороне */
 }
 
 .about-list {
   display: flex;
 }
 
+.about-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.conteiner-about-text {
+  padding-left: 30px;
+  padding-right: 100px;
+  /* display: flex; */
+}
 .about-text {
   color: var(--color-secondary-text);
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .about-title {
   color: var(--color-secondary-text);
+  margin-bottom: 20px;
 }
 
 .about-pre-text {
   font-size: 18px;
   line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-secondary-text {
+  margin-bottom: 42px;
 }
 
 .secondary-btn {
@@ -257,15 +267,42 @@ body {
 
 .price {
   background-color: #303030;
+  padding: 120px 0;
 }
 
 .price-text {
   color: var(--color-fourth-text);
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .price-title {
   color: var(--color-third-text);
+  margin-bottom: 44px;
+}
+
+.price-list {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.price-item {
+  width: calc((100%-30px) / 2);
+  padding: 30px 20px;
+  outline: 1px solid white;
+}
+
+.price-pre-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-pre-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-item:first-child {
+  margin-right: 30px;
 }
 
 .price-pre-text {
@@ -274,7 +311,41 @@ body {
   line-height: 1.7;
 }
 
+.price-btn {
+  background-color: black;
+  color: var(--color-third-text);
+}
+
 /* Reviews */
+.reviews {
+  padding: 120px 0;
+}
+
+.reviews-conteiner {
+  display: flex;
+}
+
+.reviews-list {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+
+.reviews-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  outline: 1px solid black;
+}
+
+.reviews-item:nth-child(2n) {
+  margin-top: 30px;
+}
+
+.reviews-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
 
 .reviews-item span {
   color: var(--color-secondary-text);
@@ -293,6 +364,12 @@ body {
 
 .reviews-text {
   color: var(--color-secondary-text);
+}
+
+.reviews-wrapper {
+  padding-right: 70px;
+  padding-left: 30px;
+  width: 50%;
 }
 
 .reviews-pre-text {
