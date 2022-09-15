@@ -322,6 +322,9 @@ body {
 .price-btn {
   background-color: black;
   color: var(--color-third-text);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Reviews */
