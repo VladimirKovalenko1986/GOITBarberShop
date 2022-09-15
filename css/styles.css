@@ -449,6 +449,19 @@ body {
   text-transform: uppercase;
 }
 
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  width: calc((100% - 90px) / 4);
+}
+
+.work-item:not(:first-child) {
+  margin-left: 30px;
+}
+
 /* Feedback */
 .feedbak {
   background-color: #303030;
