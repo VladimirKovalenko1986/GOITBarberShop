@@ -64,6 +64,8 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 12px 20px;
+  min-width: 160px;
 }
 /* Применяем для все указаных элементов */
 h1,
@@ -150,11 +152,17 @@ body {
   /* Отпихуем в право */
 }
 
+.header-contact {
+  /* display: block; */
+  margin-right: 40px;
+}
+
 .primery-btn {
   background-color: black;
   color: var(--color-third-text);
-  margin-left: 30px;
+  /* margin-left: 30px; */
   /* Уменьшаем с 40 до 30 так как добавили padding 5px */
+  /* display: block; */
 }
 
 /* Maine */
@@ -336,7 +344,7 @@ body {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 .reviews-item:nth-child(2n) {
