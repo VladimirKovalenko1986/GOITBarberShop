@@ -190,7 +190,14 @@ body {
 
 .hero-wrapper {
   padding: 272px 0 208px 100px;
-  background-color: turquoise;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/herofone.jpg");
+  /* Берем значение из макета и добавляем два раза */
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-grow: 1;
   /* Даем возможность расжирится на всю сторону */
 }
@@ -274,8 +281,18 @@ body {
 /* Price */
 
 .price {
-  background-color: #303030;
   padding: 120px 0;
+  background-image: url("../images/pricefone.png"),
+    linear-gradient(#111319, #111319);
+  /* ставим вначале изображение так как цвет без 
+    прозрачности и формат файла фото png */
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  /* Задаем размер секции для того чтобы применить
+   картинку к размеру блока 1600 */
+  margin: 0 auto;
+  /* центрируем секцию */
 }
 
 .price-text {
@@ -298,6 +315,8 @@ body {
   width: calc((100%-30px) / 2);
   padding: 30px 20px;
   /* outline: 1px solid white; */
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  /* Взяли из макета backgraund */
 }
 
 .price-pre-item {
