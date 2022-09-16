@@ -297,7 +297,7 @@ body {
 .price-item {
   width: calc((100%-30px) / 2);
   padding: 30px 20px;
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
 }
 
 .price-pre-item {
@@ -444,7 +444,13 @@ body {
 
 /* Work */
 
+.work {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .work-text {
+  margin-bottom: 44px;
   color: var(--color-secondary-text);
   text-transform: uppercase;
 }
@@ -465,10 +471,25 @@ body {
 /* Feedback */
 .feedbak {
   background-color: #303030;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.feedbak-conteiner {
+  display: flex;
+}
+
+.oline-conteiner {
+  width: 50%;
+  flex-wrap: wrap;
 }
 
 .feedbak-title {
   color: var(--color-third-text);
+}
+
+.contact-conteiner {
+  width: 50%;
 }
 
 /* Contacts */
@@ -514,8 +535,27 @@ body {
 
 /* Footer */
 
+.footer {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.footer-conteiner {
+  display: flex;
+  align-items: center;
+}
+
 .footer-text {
   color: var(--color-fifth-text);
+}
+
+.footer-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .footer-link {
