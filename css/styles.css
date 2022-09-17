@@ -31,6 +31,18 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.pre-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  display: block;
+  background: currentColor;
+  /* Цвет его отца тоесть .pre-title */
+  margin-right: 20px;
 }
 
 .title {
@@ -199,7 +211,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
-  /* Даем возможность расжирится на всю сторону */
+  /* Даем возможность расширится на всю сторону */
+  background-color: black;
+  /* Даем заливку для того чтобы если вдруг не загрузится фото */
 }
 
 .hero-pre-titel {
@@ -286,6 +300,8 @@ body {
     linear-gradient(#111319, #111319);
   /* ставим вначале изображение так как цвет без 
     прозрачности и формат файла фото png */
+  background-color: black;
+  /* страхуемся в случае не загрузки фона */
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -315,8 +331,16 @@ body {
   width: calc((100%-30px) / 2);
   padding: 30px 20px;
   /* outline: 1px solid white; */
+}
+
+.price-item:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.price-item:first-child {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   /* Взяли из макета backgraund */
+  margin-right: 30px;
 }
 
 .price-pre-item {
@@ -326,10 +350,6 @@ body {
 
 .price-pre-item:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.price-item:first-child {
-  margin-right: 30px;
 }
 
 .price-pre-text {
