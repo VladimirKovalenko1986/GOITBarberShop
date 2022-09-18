@@ -309,6 +309,8 @@ body {
    картинку к размеру блока 1600 */
   margin: 0 auto;
   /* центрируем секцию */
+  background-attachment: fixed;
+  /* Делаем background картынки который двигается с экраном */
 }
 
 .price-text {
@@ -346,6 +348,17 @@ body {
 .price-pre-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  /* Для того чтобы поставить динию  внижнее положение  */
+}
+
+.price-pre-item::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  margin: 0 12px;
+  /* Добавляем отступы по краям */
+  background: rgba(157, 164, 189, 0.12);
 }
 
 .price-pre-item:not(:last-child) {
@@ -356,6 +369,11 @@ body {
   color: var(--color-fifth-text);
   font-size: 18px;
   line-height: 1.7;
+}
+
+.price-pre-text:last-child {
+  order: 1;
+  /* Меняем меставми элемнет, присваивая ему значение */
 }
 
 .price-btn {
@@ -387,6 +405,8 @@ body {
   height: 133px;
   padding: 20px 24px;
   /* outline: 1px solid black; */
+  text-align: center;
+  background-color: var(--color-bgc-master);
 }
 
 .reviews-item:nth-child(2n) {
@@ -414,6 +434,9 @@ body {
 
 .reviews-text {
   color: var(--color-secondary-text);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
 }
 
 .reviews-wrapper {
@@ -469,16 +492,55 @@ body {
   margin-left: 30px;
   /* Добавили с левой стороны по 30 кроме первого */
 }
+
+.master-img {
+  display: block;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
 .master-pre-title {
   color: var(--color-secondary-text);
   font-size: 18px;
   line-height: 1.4;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .master-pre-text {
   color: var(--focus-color-text);
   font-size: 14px;
   line-height: 1.4;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.master-list-social {
+  display: flex;
+  justify-content: center;
+}
+
+.master-item-social {
+  width: calc((100% - 30px) / 4);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-third-text);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.master-item-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.master-link-social {
+  display: flex;
+}
+
+.master-icon-svg:hover {
+  fill: var(--focus-color-text);
 }
 
 /* Work */
