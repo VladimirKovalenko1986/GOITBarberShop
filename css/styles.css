@@ -669,7 +669,7 @@ body {
 
 .contacts-link {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   color: var(--color-fifth-text);
 
@@ -745,6 +745,7 @@ body {
 }
 
 .footer-link {
+  display: flex;
   color: var(--color-secondary-text);
 
   font-weight: 600;
