@@ -171,7 +171,7 @@ body {
   font-size: 12px;
   line-height: 1.3;
   letter-spacing: 0.1em;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .contacts-wrap {
@@ -636,6 +636,8 @@ body {
 }
 
 .feedbak-title {
+  margin-bottom: 44px;
+
   color: var(--color-third-text);
 }
 
@@ -666,6 +668,9 @@ body {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: baseline;
+
   color: var(--color-fifth-text);
 
   font-size: 18px;
@@ -677,11 +682,12 @@ body {
 }
 
 .contact-span {
-  padding-left: 30px;
+  max-width: 220px;
 }
 
 .contact-icon-svg {
   stroke: var(--color-fifth-text);
+  margin-right: 16px;
 }
 
 .contacts-item:first-child {
