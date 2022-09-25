@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -233,17 +234,26 @@
           <p class="master-text pre-title">
             For true enjoyers of the atmosphere
           </p>
-          <h2 class="master-title title">Our barbers</h2>
+          <h2 class="master-title title" data-aos="fade-down">Our barbers</h2>
 
           <ul class="master-list list">
             <li class="master-item">
-              <img
-                src="./images/photomaster1.jpg"
-                alt="photo master john"
-                width="370"
-                height="346"
-                class="master-img"
-              />
+              <div class="img-conteiner">
+                <img
+                  src="./images/photomaster1.jpg"
+                  alt="photo master john"
+                  width="370"
+                  height="346"
+                  class="master-img"
+                />
+
+                <p class="master-details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                  quos in quas, sit officiis aut tempore recusandae illo nemo,
+                  eveniet nostrum ad accusantium labore quidem, repudiandae
+                  expedita nisi asperiores quasi.
+                </p>
+              </div>
               <h3 class="master-pre-title">John Smith</h3>
               <p class="master-pre-text">Extreme Barber</p>
               <ul class="master-list-social list">
@@ -630,5 +640,14 @@
         </ul>
       </div>
     </footer>
+    <!-- Модельне вікно -->
+    <div class="backdrop is-hidden">
+      <div class="modal"></div>
+      <!-- Фон затемнення вікна при натисканні модельного вікна -->
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,0 +1,60 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  /* Змінює точку трансформації до якої 
+  відбувається зміна положення за замовченням centr */
+
+  /* animation-name: rotate; */
+  /* Звертаємось до коду анімації */
+
+  /* animation-duration: 3000ms; */
+  /* Плавний перехід, час за який */
+
+  /* animation-iteration-count: infinite; */
+  /* Зациклювання в данному випакду постійна */
+
+  /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  /* Це лінія змякшування */
+
+  /* animation: rotate 3000ms infinite; */
+  /* можно записати загальним  кодом */
+
+  /* animation-delay: 1000ms; */
+  /* Затримка */
+}
+
+.box:hover {
+  animation: rotate 3000ms infinite;
+  /* Що відбувається при наведені */
+
+  /* animation-play-state: paused; */
+  /* Робить анімацію аде коли робимо наведення на елемент робить паузу */
+
+  animation-delay: 3000ms;
+  /* при наведені через задиний час відбувається анімація */
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg);
+    /* На початку */
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    /* В середині */
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    border-radius: 0;
+    /* На кінець */
+  }
+}
+/* Можемо додати через 10% або будь який інтервал, додавати значення border-radius */
