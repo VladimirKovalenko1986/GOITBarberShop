@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -47,7 +47,9 @@
           <a href="tel:+380441111111" class="header-contact link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="primery-btn btn">Online-booking</button>
+          <button type="button" class="primery-btn btn" data-modal-open>
+            Online-booking
+          </button>
         </div>
       </div>
     </header>
@@ -641,13 +643,18 @@
       </div>
     </footer>
     <!-- Модельне вікно -->
-    <div class="backdrop is-hidden">
-      <div class="modal"></div>
-      <!-- Фон затемнення вікна при натисканні модельного вікна -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <!-- Фон затемнення вікна при натисканні модельного вікна -->
+        <button type="button" class="close-button" data-modal-close>X</button>
+        <!-- Додаємо іконку закриття -->
+      </div>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
+    <script src="./js/modal.js"></script>
+    <!-- Посилання на файл JS -->
   </body>
 </html>

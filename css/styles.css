@@ -108,6 +108,11 @@ p {
   /* Убираем все отступы */
 }
 
+button {
+  border: none;
+  /* Скидуємо зайвий бордер для кнопок */
+}
+
 * {
   /* outline: 1px solid tomato; */
 }
@@ -805,6 +810,24 @@ body {
   background-color: var(--color-third-text);
 }
 
+.close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: var(--focus-color-text);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -812,4 +835,9 @@ body {
 
   pointer-events: none;
   /* Елементи які ми приховали не активні від випадкового натискання */
+}
+
+.no-scroll {
+  overflow: hidden;
+  /* Задаємо через JS щоб body при завантажені не міг рухатись */
 }
