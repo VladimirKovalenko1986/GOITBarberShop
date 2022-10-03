@@ -12,6 +12,8 @@
   --color-fourth-text: rgba(157, 164, 189, 0.6);
   --color-fifth-text: #9da4bd;
   --color-bgc-master: #f7f7f7;
+  --color-bgc-bookincontacts: #191c26;
+  --color-feedbak: rgba(157, 164, 189, 0.4);
 }
 
 a {
@@ -651,21 +653,27 @@ body {
   max-width: 100%;
 }
 
-/* Feedback */
-.feedbak {
-  padding-top: 130px;
-  padding-bottom: 120px;
+/* Conteiners feedback and contacts */
 
-  background-color: #303030;
+.wrap-feedback {
+  margin: 0 auto;
+  width: 1600px;
+  background-color: var(--color-bgc-bookincontacts);
+  background-image: url("../images/contact-bg.png");
+  background-size: 50%;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
-.feedbak-conteiner {
+.feedback-conteiner {
   display: flex;
 }
 
-.oline-conteiner {
+/* Feedback */
+
+.feedbak {
+  padding: 130px 0 120px;
   width: 50%;
-  flex-wrap: wrap;
 }
 
 .feedbak-title {
@@ -674,16 +682,65 @@ body {
   color: var(--color-third-text);
 }
 
-/* Contacts */
+/* Form */
 
-.contact-conteiner {
-  width: 50%;
-  padding-left: 100px;
-  padding-right: 130px;
+.form-feedback {
+  padding-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.form-item {
+  border: none;
+  border-bottom: 1px solid var(--color-feedbak);
+
+  background: none;
+  color: var(--color-feedbak);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.form-item:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-third-text);
+}
+
+.form-item:focus::placeholder {
+  color: var(--color-third-text);
+}
+
+.form-item::placeholder {
+  color: var(--color-feedbak);
+}
+
+input.form-item {
+  /* будут применяться только для input в классе .form-item */
+  width: 270px;
+  height: 24px;
+  padding-bottom: 8px;
+}
+
+textarea.form-item {
+  width: 100%;
+  height: 76px;
+  padding-bottom: 60px;
+  margin-top: 44px;
+}
+
+.form-feedback textarea {
+  resize: none;
+}
+
+/* Contacts */
+
 .contacts {
-  background-color: #303030;
+  padding: 130px 0 120px 200px;
+  width: 50%;
 }
 
 .contacts-title {

@@ -539,14 +539,20 @@
         </div>
       </section>
 
-      <!-- Feedback -->
-      <section class="feedbak">
-        <div class="conteiner feedbak-conteiner">
-          <div class="oline-conteiner">
+      <div class="wrap-feedback">
+        <div class="conteiner feedback-conteiner">
+          <!-- Feedback -->
+        <section class="feedbak">
             <h2 class="feedbak-title title">Online-booking</h2>
-          </div>
 
-          <div class="contact-conteiner">
+            <form class="form-feedback">
+              <input type="text" name="name" placeholder="Name*" class="form-item">
+              <input type="tel" name="tel" placeholder="Phone*" class="form-item">
+              <textarea name="massage" placeholder="Massage" class="form-item"></textarea>
+            </form>
+        </section>
+          <!-- Contacts -->
+        <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
             <address class="contacts-address">
               <ul class="contacts-list list">
@@ -607,9 +613,10 @@
               <p class="contacts-text pre-title">Working hours</p>
               <p class="contacts-pre-text">Every day from 9:00 to 22:00</p>
             </address>
-          </div>
+        </section>
         </div>
-      </section>
+    </div>
+      
     </main>
 
     <!-- Footer -->
@@ -637,7 +644,7 @@
       </div>
     </footer>
     <!-- Модельне вікно -->
-    <!-- <div class="backdrop is-hidden" data-modal> -->
+    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <!-- Фон затемнення вікна при натисканні модельного вікна -->
       <button type="button" class="close-button" data-modal-close>X</button>
