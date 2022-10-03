@@ -544,12 +544,6 @@
         <div class="conteiner feedbak-conteiner">
           <div class="oline-conteiner">
             <h2 class="feedbak-title title">Online-booking</h2>
-            <form>
-              <input name="name" type="text" placeholder="Name*" />
-              <input name="phone" type="text" placeholder="Phone*" />
-              <input name="massage" type="text" placeholder="Message" />
-              <button type="submit" class="btn">send</button>
-            </form>
           </div>
 
           <div class="contact-conteiner">
@@ -782,9 +776,25 @@
           </ul>
         </div>
 
-        <div class="accepr">
-          <input type="checkbox" id="accept" name="accept" required />
-          <label for="accept">Я погоджуюсь</label>
+        <div class="accepr-checkbox">
+          <input
+            type="checkbox"
+            id="accept"
+            name="accept"
+            required
+            class="input-checkbox"
+          />
+
+          <label for="accept" class="label-checkbox"
+            ><div class="checkbox">
+              <svg width="12" height="12" class="icon-checkbox">
+                <use
+                  xlink:href="./images/social/sprite.svg#icon-icon-check"
+                ></use>
+              </svg>
+            </div>
+            Я погоджуюсь</label
+          >
         </div>
 
         <button type="submit" class="form-btn">Відправити</button>

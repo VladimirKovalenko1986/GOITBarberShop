@@ -890,3 +890,45 @@ body {
 
 .error {
 }
+
+.accepr-checkbox {
+  display: flex;
+}
+
+.label-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+}
+
+.icon-checkbox {
+}
+
+.label-checkbox {
+}
+
+.input-checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: 1px;
+}
+
+.input-checkbox:checked + .label-checkbox .checkbox {
+  background-color: blue;
+  border: 2px solid blue;
+}
