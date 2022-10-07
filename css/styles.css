@@ -138,7 +138,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 /* Header */
@@ -212,8 +212,25 @@ body {
   display: flex;
 }
 
+.hero-social-wrap {
+  width: 90px;
+  display: flex;
+  align-items: flex-end;
+}
+
 .hero-list {
   width: 100px;
+  display: flex;
+  transform: rotate(-90deg) translate(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-list::before {
+  content: "";
+  height: 1px;
+  width: 60px;
 }
 
 .hero-link {
