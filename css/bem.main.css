@@ -1,0 +1,1 @@
+.nav-list{margin:10px;padding:10px;font-size:13px;display:flex}.nav-list .icon{width:10px;height:10px}.nav-list .nav-item{margin-left:30px}.nav-list .nav-item .nav-link:hover{color:red}.nav-list-link{color:green}.nav-list:hover{color:red}.nav-list::before{content:"";position:absolute}.nav-list li{color:aqua}/*# sourceMappingURL=bem.main.css.map */

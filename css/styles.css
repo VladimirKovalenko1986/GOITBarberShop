@@ -4,23 +4,6 @@
 /* Будет применяться для каждого элемента на странице, 
 можно применить для скидание всех отступов margin , pading*/
 
-:root {
-  --focus-color-text: #ff6c00;
-  --color-primery-text: #555555;
-  --color-secondary-text: #303030;
-  --color-third-text: #ffffff;
-  --color-fourth-text: rgba(157, 164, 189, 0.6);
-  --color-fifth-text: #9da4bd;
-  --color-bgc-master: #f7f7f7;
-  --color-bgc-bookincontacts: #191c26;
-  --color-feedbak: rgba(157, 164, 189, 0.4);
-}
-
-a {
-  transition: color 500ms;
-  /* Додаємо до всі посилань плавний перехід */
-}
-
 .list {
   list-style: none;
 }
@@ -95,41 +78,6 @@ a {
 .btn:hover,
 .btn:focus {
   background-color: var(--focus-color-text);
-}
-
-/* Применяем для все указаных элементов */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p {
-  margin: 0;
-  /* Убираем все отступы */
-}
-
-button {
-  border: none;
-  /* Скидуємо зайвий бордер для кнопок */
-}
-
-* {
-  /* outline: 1px solid tomato; */
-}
-
-ul {
-  padding-left: 0;
-}
-
-body {
-  color: var(--color-primery-text);
-
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 1.9;
-  letter-spacing: 0.02em;
 }
 
 .conteiner {

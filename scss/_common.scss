@@ -1,0 +1,35 @@
+/* Применяем для все указаных элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+a {
+  transition: color 500ms;
+  /* Додаємо до всі посилань плавний перехід */
+}
+button {
+  border: none;
+}
+
+* {
+  /* outline: 1px solid tomato; */
+}
+
+ul {
+  padding-left: 0;
+}
+
+body {
+  color: var(--color-primery-text);
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
