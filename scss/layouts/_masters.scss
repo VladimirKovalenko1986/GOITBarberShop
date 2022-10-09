@@ -2,110 +2,109 @@
   padding: 120px 0;
 
   background-color: var(--color-bgc-master);
-}
 
-.master-text {
-  margin-bottom: 20px;
+  &-text {
+    margin-bottom: 20px;
 
-  color: var(--color-secondary-text);
+    color: var(--color-secondary-text);
 
-  text-transform: uppercase;
-}
+    text-transform: uppercase;
+  }
 
-.master-title {
-  margin-bottom: 45px;
+  &-title {
+    margin-bottom: 45px;
 
-  color: var(--color-secondary-text);
-}
+    color: var(--color-secondary-text);
+  }
 
-.master-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.master-item {
-  width: calc((100% - 60px) / 3);
-  /* ФОрмула сетки 60 это два отступа по 30 3 это три
-   элемента в строке  */
-}
+  &-item {
+    width: calc((100% - 60px) / 3);
+    // Формула сетки 60 это два отступа по 30 3 это три
+    //  элемента в строке
 
-.master-item:not(:first-child) {
-  margin-left: 30px;
-  /* Добавили с левой стороны по 30 кроме первого */
-}
+    &:not(:first-child) {
+      margin-left: 30px;
+      // Добавили с левой стороны по 30 кроме первого
+    }
+    &:hover .master-details {
+      transform: translateY(0);
+    }
+  }
 
-.master-item:hover .master-details {
-  transform: translateY(0);
-}
+  &-img-conteiner {
+    position: relative;
+    overflow: hidden;
+  }
 
-.img-conteiner {
-  position: relative;
-  overflow: hidden;
-}
+  &-img {
+    display: block;
+    max-width: 100%;
+  }
 
-.master-img {
-  display: block;
-  max-width: 100%;
-}
+  &-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 63px 24px;
 
-.master-details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 63px 24px;
+    background-color: rgba(255, 108, 0, 0.5);
 
-  background-color: rgba(255, 108, 0, 0.5);
+    transform: translateY(100%);
+    transition: transform 250ms;
+  }
 
-  transform: translateY(100%);
-  transition: transform 250ms;
-}
+  &-pre-title {
+    margin-bottom: 8px;
 
-.master-pre-title {
-  margin-bottom: 8px;
+    color: var(--color-secondary-text);
 
-  color: var(--color-secondary-text);
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+  }
 
-  font-size: 18px;
-  line-height: 1.4;
-  text-align: center;
-}
+  &-pre-text {
+    margin-bottom: 30px;
+    text-align: center;
 
-.master-pre-text {
-  margin-bottom: 30px;
-  text-align: center;
+    color: var(--focus-color-text);
 
-  color: var(--focus-color-text);
+    font-size: 14px;
+    line-height: 1.4;
+  }
 
-  font-size: 14px;
-  line-height: 1.4;
-}
+  &-list-social {
+    display: flex;
+    justify-content: center;
+  }
 
-.master-list-social {
-  display: flex;
-  justify-content: center;
-}
+  &-item-social {
+    width: calc((100% - 30px) / 4);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
-.master-item-social {
-  width: calc((100% - 30px) / 4);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+    background-color: var(--color-third-text);
 
-  background-color: var(--color-third-text);
-}
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 
-.master-item-social:not(:last-child) {
-  margin-right: 10px;
-}
+  &-link-social {
+    display: flex;
+  }
 
-.master-link-social {
-  display: flex;
-}
-
-.master-icon-svg:hover {
-  fill: var(--focus-color-text);
+  &-icon-svg:hover {
+    fill: var(--focus-color-text);
+  }
 }

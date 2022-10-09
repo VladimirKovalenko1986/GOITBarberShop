@@ -1,29 +1,29 @@
 .work {
   padding-top: 120px;
   padding-bottom: 120px;
-}
 
-.work-text {
-  margin-bottom: 44px;
+  &-text {
+    margin-bottom: 44px;
 
-  color: var(--color-secondary-text);
+    color: var(--color-secondary-text);
 
-  text-transform: uppercase;
-}
+    text-transform: uppercase;
+  }
 
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.work-item {
-  width: calc((100% - 90px) / 4);
-}
+  &-item {
+    width: calc((100% - 90px) / 4);
 
-.work-item:not(:first-child) {
-  margin-left: 30px;
-}
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
 
-.work-img {
-  max-width: 100%;
+  &-img {
+    max-width: 100%;
+  }
 }

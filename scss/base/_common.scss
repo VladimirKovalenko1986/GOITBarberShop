@@ -4,11 +4,11 @@
 
 .link {
   text-decoration: none;
-}
 
-.link:hover,
-.link:focus {
-  color: var(--focus-color-text);
+  &:hover,
+  &:focus {
+    color: var(--focus-color-text);
+  }
 }
 
 .pre-title {
@@ -18,17 +18,17 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
-}
 
-.pre-title::before {
-  content: "";
-  width: 60px;
-  height: 1px;
-  display: block;
-  margin-right: 20px;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    display: block;
+    margin-right: 20px;
 
-  background: currentColor;
-  /* Цвет его отца тоесть .pre-title */
+    background: currentColor;
+    /* Цвет его отца тоесть .pre-title */
+  }
 }
 
 .title {

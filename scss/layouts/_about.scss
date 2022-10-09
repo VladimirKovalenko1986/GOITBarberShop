@@ -1,54 +1,52 @@
 .about {
   padding: 120px 0;
-}
 
-.about-wrapper {
-  display: flex;
-  /* Добавляем для того чтобы
-  в контейнете постввить на одной стороне */
-}
+  &-wrapper {
+    display: flex;
+    // Добавляем для того чтобы в контейнете поставить на одной стороне
+  }
 
-.about-list {
-  display: flex;
-}
+  &-list {
+    display: flex;
+  }
 
-.about-item:not(:first-child) {
-  margin-left: 30px;
-}
+  &-item {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
 
-.about-img {
-  display: block;
-}
+  &-img {
+    display: block;
+  }
 
-.conteiner-about-text {
-  padding-left: 30px;
-  padding-right: 100px;
-  /* display: flex; */
-}
-.about-text {
-  margin-bottom: 20px;
+  &-conteiner-wraper {
+    padding-left: 30px;
+    padding-right: 100px;
+  }
 
-  color: var(--color-secondary-text);
+  &-text {
+    margin-bottom: 20px;
 
-  text-transform: uppercase;
-}
-.about-title {
-  margin-bottom: 20px;
+    color: var(--color-secondary-text);
 
-  color: var(--color-secondary-text);
-}
+    text-transform: uppercase;
+  }
 
-.about-pre-text {
-  margin-bottom: 20px;
+  &-title {
+    margin-bottom: 20px;
 
-  font-size: 18px;
-  line-height: 1.7;
-}
+    color: var(--color-secondary-text);
+  }
 
-.about-secondary-text {
-  margin-bottom: 42px;
-}
+  &-pre-text {
+    margin-bottom: 20px;
 
-.secondary-btn {
-  color: var(--color-secondary-text);
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  &-secondary-text {
+    margin-bottom: 42px;
+  }
 }

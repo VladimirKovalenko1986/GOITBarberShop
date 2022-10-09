@@ -33,7 +33,7 @@
   }
 
   &-link,
-  &-contact {
+  &-contacts {
     color: var(--color-third-text);
 
     font-weight: 600;
@@ -43,16 +43,12 @@
     // outline: 1px solid tomato;
   }
 
-  &-contacts-wrap {
-    margin-left: auto;
-    // Отпихуем в право
-  }
-
-  &-contact {
+  &-contacts {
     margin-right: 40px;
   }
 
-  &-btn {
-    color: var(--color-third-text);
+  &-contacts-wrap {
+    margin-left: auto;
+    // Отпихуем в право
   }
 }

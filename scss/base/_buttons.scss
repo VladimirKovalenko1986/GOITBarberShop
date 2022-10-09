@@ -13,9 +13,25 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--focus-color-text);
+  }
 }
 
-.btn:hover,
-.btn:focus {
-  background-color: var(--focus-color-text);
+.button {
+  color: var(--color-third-text);
+
+  &-secondary {
+    color: var(--color-secondary-text);
+  }
+
+  &-third {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--color-third-text);
+  }
 }
