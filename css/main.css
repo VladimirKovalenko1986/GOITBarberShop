@@ -11,6 +11,11 @@
   --color-feedbak: rgba(157, 164, 189, 0.4);
 }
 
+/*  * {
+  color: blue;
+} */
+/* Будет применяться для каждого элемента на странице, 
+можно применить для скидание всех отступов margin , pading*/
 /* Применяем для все указаных элементов */
 h1,
 h2,
@@ -96,9 +101,15 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: 1px;
+}
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn {
@@ -121,74 +132,46 @@ body {
   background-color: var(--focus-color-text);
 }
 
-.conteiner {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* outline: 1px solid blue; */
-}
-
-/* Header */
 .header {
   position: absolute;
   width: 100%;
-  /* Щоб контент hero заходив на header */
   padding-top: 31px;
 }
-
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
 .header-logo {
   display: block;
   margin-right: 130px;
 }
-
-.header-conteiner {
-  display: flex;
-  /* все элементы стали в ряд но вытянулись по высоте aling items: stretch;
-   стоит за умолчанием */
-  align-items: center;
-  /* Для того чтобы элементы выстроились по центру */
-}
-
 .header-list {
   display: flex;
 }
-
 .header-item:not(:first-child) {
-  /* применить кроме первого элеиента */
   margin-left: 30px;
 }
-
 .header-link {
   display: block;
   padding: 5px;
 }
-
-.header-link,
-.header-contact {
+.header-link, .header-contact {
   color: var(--color-third-text);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.3;
   letter-spacing: 0.1em;
-  /* outline: 1px solid tomato; */
 }
-
-.contacts-wrap {
+.header-contacts-wrap {
   margin-left: auto;
-  /* Отпихуем в право */
 }
-
 .header-contact {
   margin-right: 40px;
 }
-
-.primery-btn {
+.header-btn {
   color: var(--color-third-text);
 }
 
-/* Maine */
-/* Hero */
 .hero {
   /* background-color: turquoise; */
 }
@@ -261,11 +244,6 @@ body {
   line-height: 1.7;
 }
 
-.about-img {
-  display: block;
-}
-
-/* Aboute */
 .about {
   padding: 120px 0;
 }
@@ -273,7 +251,7 @@ body {
 .about-wrapper {
   display: flex;
   /* Добавляем для того чтобы
-   в контейнете постввить на одной стороне */
+  в контейнете постввить на одной стороне */
 }
 
 .about-list {
@@ -282,6 +260,10 @@ body {
 
 .about-item:not(:first-child) {
   margin-left: 30px;
+}
+
+.about-img {
+  display: block;
 }
 
 .conteiner-about-text {
@@ -315,7 +297,6 @@ body {
   color: var(--color-secondary-text);
 }
 
-/* Price */
 .price {
   padding: 120px 0;
   margin: 0 auto;
@@ -405,7 +386,6 @@ body {
   color: var(--color-third-text);
 }
 
-/* Reviews */
 .reviews {
   padding: 120px 0;
 }
@@ -480,7 +460,6 @@ body {
   line-height: 1.7;
 }
 
-/* Masters */
 .master {
   padding: 120px 0;
   background-color: var(--color-bgc-master);
@@ -582,7 +561,6 @@ body {
   fill: var(--focus-color-text);
 }
 
-/* Work */
 .work {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -611,7 +589,6 @@ body {
   max-width: 100%;
 }
 
-/* Conteiners feedback and contacts */
 .wrap-feedback {
   margin: 0 auto;
   width: 1600px;
@@ -626,7 +603,6 @@ body {
   display: flex;
 }
 
-/* Feedback */
 .feedbak {
   padding: 130px 0 120px;
   width: 50%;
@@ -637,7 +613,6 @@ body {
   color: var(--color-third-text);
 }
 
-/* Form */
 .form-feedback {
   padding-right: 30px;
   display: flex;
@@ -662,24 +637,8 @@ body {
   border-bottom: 1px solid var(--color-third-text);
 }
 
-.form-item:focus::-moz-placeholder {
-  color: var(--color-third-text);
-}
-
-.form-item:focus:-ms-input-placeholder {
-  color: var(--color-third-text);
-}
-
 .form-item:focus::placeholder {
   color: var(--color-third-text);
-}
-
-.form-item::-moz-placeholder {
-  color: var(--color-feedbak);
-}
-
-.form-item:-ms-input-placeholder {
-  color: var(--color-feedbak);
 }
 
 .form-item::placeholder {
@@ -704,7 +663,6 @@ textarea.form-item {
   resize: none;
 }
 
-/* Contacts */
 .contacts {
   padding: 130px 0 120px 200px;
   width: 50%;
@@ -770,7 +728,6 @@ textarea.form-item {
   line-height: 1.7;
 }
 
-/* Footer */
 .footer {
   margin-top: 56px;
   margin-bottom: 56px;
@@ -802,7 +759,6 @@ textarea.form-item {
   line-height: 1.4;
 }
 
-/* modal */
 .backdrop {
   width: 100%;
   height: 100vh;
@@ -879,6 +835,10 @@ textarea.form-item {
   border-radius: 4px;
 }
 
+/* .form-element input:focus {
+  outline: 1px solid red;
+  /* Змінюємо обводку  щоб побачити border зробимо outline: none*/
+/* } */
 .form-element .error {
   color: red;
   display: none;
@@ -921,8 +881,7 @@ textarea.form-item {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: 1px;
 }
 

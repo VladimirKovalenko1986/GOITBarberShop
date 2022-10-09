@@ -1,0 +1,54 @@
+.about {
+  padding: 120px 0;
+}
+
+.about-wrapper {
+  display: flex;
+  /* Добавляем для того чтобы
+  в контейнете постввить на одной стороне */
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.about-img {
+  display: block;
+}
+
+.conteiner-about-text {
+  padding-left: 30px;
+  padding-right: 100px;
+  /* display: flex; */
+}
+.about-text {
+  margin-bottom: 20px;
+
+  color: var(--color-secondary-text);
+
+  text-transform: uppercase;
+}
+.about-title {
+  margin-bottom: 20px;
+
+  color: var(--color-secondary-text);
+}
+
+.about-pre-text {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-secondary-text {
+  margin-bottom: 42px;
+}
+
+.secondary-btn {
+  color: var(--color-secondary-text);
+}

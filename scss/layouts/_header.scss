@@ -1,0 +1,58 @@
+.header {
+  position: absolute;
+  width: 100%;
+  // Щоб контент hero заходив на header
+  padding-top: 31px;
+
+  &-conteiner {
+    display: flex;
+    // все элементы стали в ряд но вытянулись по высоте aling items: stretch стоит за умолчанием;
+    align-items: center;
+    // Для того чтобы элементы выстроились по центру
+  }
+
+  &-logo {
+    display: block;
+    margin-right: 130px;
+  }
+
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    &:not(:first-child) {
+      // применить кроме первого элеиента
+      margin-left: 30px;
+    }
+  }
+
+  &-link {
+    display: block;
+    padding: 5px;
+  }
+
+  &-link,
+  &-contact {
+    color: var(--color-third-text);
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+    // outline: 1px solid tomato;
+  }
+
+  &-contacts-wrap {
+    margin-left: auto;
+    // Отпихуем в право
+  }
+
+  &-contact {
+    margin-right: 40px;
+  }
+
+  &-btn {
+    color: var(--color-third-text);
+  }
+}

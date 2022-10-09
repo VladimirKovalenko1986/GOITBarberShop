@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Header site -->
@@ -42,12 +42,12 @@
           </ul>
         </nav>
         <!-- Contact -->
-        <div class="contacts-wrap">
+        <div class="header-contacts-wrap">
           <!-- контейнер-обгордка -->
           <a href="tel:+380441111111" class="header-contact link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="primery-btn btn" data-modal-open>
+          <button type="button" class="header-btn btn" data-modal-open>
             Online-booking
           </button>
         </div>
@@ -60,27 +60,27 @@
         <div class="conteiner hero-conteiner">
           <div class="hero-social-wrap">
             <ul class="hero-list list">
-            <li class="hero-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener norefferer nofollow"
-                class="hero-link link"
-                >Youtube</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener norefferer nofollow"
-                class="hero-link link"
-                >Instagram</a
-              >
-            </li>
-          </ul>
-        </div>
-          
+              <li class="hero-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener norefferer nofollow"
+                  class="hero-link link"
+                  >Youtube</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener norefferer nofollow"
+                  class="hero-link link"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-wrapper">
             <p class="hero-pre-titel pre-title">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
@@ -382,7 +382,7 @@
                     ><svg
                       viewBox="0 0 100 100"
                       width="20"
-                      heiht="20"
+                      height="20"
                       class="master-icon-svg"
                     >
                       <use
@@ -545,17 +545,31 @@
       <div class="wrap-feedback">
         <div class="conteiner feedback-conteiner">
           <!-- Feedback -->
-        <section class="feedbak">
+          <section class="feedbak">
             <h2 class="feedbak-title title">Online-booking</h2>
 
             <form class="form-feedback">
-              <input type="text" name="name" placeholder="Name*" class="form-item">
-              <input type="tel" name="tel" placeholder="Phone*" class="form-item">
-              <textarea name="massage" placeholder="Massage" class="form-item"></textarea>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name*"
+                class="form-item"
+              />
+              <input
+                type="tel"
+                name="tel"
+                placeholder="Phone*"
+                class="form-item"
+              />
+              <textarea
+                name="massage"
+                placeholder="Massage"
+                class="form-item"
+              ></textarea>
             </form>
-        </section>
-          <!-- Contacts -->
-        <section class="contacts">
+          </section>
+
+          <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
             <address class="contacts-address">
               <ul class="contacts-list list">
@@ -616,10 +630,9 @@
               <p class="contacts-text pre-title">Working hours</p>
               <p class="contacts-pre-text">Every day from 9:00 to 22:00</p>
             </address>
-        </section>
+          </section>
         </div>
-    </div>
-      
+      </div>
     </main>
 
     <!-- Footer -->
@@ -648,67 +661,67 @@
     </footer>
     <!-- Модельне вікно -->
     <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <!-- Фон затемнення вікна при натисканні модельного вікна -->
-      <button type="button" class="close-button" data-modal-close>X</button>
-      <!-- Додаємо іконку закриття -->
-      <p class="modal-title">Замовити послугу:</p>
-      <!-- заголовок форми -->
-      <form class="madal-form">
-        <div class="form-element">
-          <label for="name">Введіть ім'я <span>*</span></label>
-          <input
-            type="text"
-            minlength="5"
-            maxlength="10"
-            name="name"
-            id="name"
-            required
-          />
-          <!-- required обов'язкове поле для заповнення -->
-        </div>
-        <div class="form-element">
-          <label for="password">Введіть пароль</label>
-          <input type="password" name="password" id="password" />
-          <!-- текс який ми вводимо не видно його -->
-        </div>
+      <div class="modal">
+        <!-- Фон затемнення вікна при натисканні модельного вікна -->
+        <button type="button" class="close-button" data-modal-close>X</button>
+        <!-- Додаємо іконку закриття -->
+        <p class="modal-title">Замовити послугу:</p>
+        <!-- заголовок форми -->
+        <form class="madal-form">
+          <div class="form-element">
+            <label for="name">Введіть ім'я <span>*</span></label>
+            <input
+              type="text"
+              minlength="5"
+              maxlength="10"
+              name="name"
+              id="name"
+              required
+            />
+            <!-- required обов'язкове поле для заповнення -->
+          </div>
+          <div class="form-element">
+            <label for="password">Введіть пароль</label>
+            <input type="password" name="password" id="password" />
+            <!-- текс який ми вводимо не видно його -->
+          </div>
 
-        <div class="form-element">
-          <label for="email" title="Введіть адресу gmail"
-            >Введіть адрес електронної пошти</label
-          >
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="your.email@gmail.com"
-          />
+          <div class="form-element">
+            <label for="email" title="Введіть адресу gmail"
+              >Введіть адрес електронної пошти</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your.email@gmail.com"
+            />
 
-          <!-- pattern="[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$"
+            <!-- pattern="[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$"
           властивість до пошти приймати формат пошти в данному випадку це gmail.com -->
-          <!-- title="Введіть адресу gmail" при наведдені на label email з'явл'ється підсказка -->
-          <!-- <span>Error: введіть пошту gmail.com</span> -->
-          <!-- Можно зробити червоним кольором щоб користувач помітив -->
-          <span class="error">Не вірно введено пошту</span>
-          <!-- Помилка в формі -->
-        </div>
+            <!-- title="Введіть адресу gmail" при наведдені на label email з'явл'ється підсказка -->
+            <!-- <span>Error: введіть пошту gmail.com</span> -->
+            <!-- Можно зробити червоним кольором щоб користувач помітив -->
+            <span class="error">Не вірно введено пошту</span>
+            <!-- Помилка в формі -->
+          </div>
 
-        <div class="form-element">
-          <label for="tel">Введіть номер мобільного телефону</label>
-          <input
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder="050-123-45-67"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          />
-        </div>
-        <!-- pattern призначений для специфічного телефонного коду в 
+          <div class="form-element">
+            <label for="tel">Введіть номер мобільного телефону</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="050-123-45-67"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            />
+          </div>
+          <!-- pattern призначений для специфічного телефонного коду в 
             данному випадку це для України pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}
              - розшифровується перші три цифри вид 0 до 9 потім дефіс далі дві 
              цифри від 0 до 9 дефіс далі три цифри від 0 до 9-->
 
-        <!-- <div class="form-element">
+          <!-- <div class="form-element">
           <label for="number">Введіть кількість учасників</label>
           <input
             type="number"
@@ -718,10 +731,10 @@
             max="100"
             step="10"
           /> -->
-        <!-- step крок -->
-        <!-- </div> -->
+          <!-- step крок -->
+          <!-- </div> -->
 
-        <!-- <div class="form-element">
+          <!-- <div class="form-element">
           <label for="file">Завантажте файли</label>
           <input
             type="file"
@@ -730,94 +743,94 @@
             accept="image/gif, image/jpeg, image.png"
             multiple
           /> -->
-        <!-- Вибираєіо файл та завтажуємо -->
-        <!-- accept пропісуєіо саме який файл буде завантажуватися -->
-        <!-- multiple можемо додати декілька файлів -->
-        <!-- </div> -->
+          <!-- Вибираєіо файл та завтажуємо -->
+          <!-- accept пропісуєіо саме який файл буде завантажуватися -->
+          <!-- multiple можемо додати декілька файлів -->
+          <!-- </div> -->
 
-        <!-- <div class="form-element">
+          <!-- <div class="form-element">
           <label for="search">Пошук:</label>
           <input type="search" name="search" id="search" />
         </div> -->
 
-        <!-- <div class="form-element">
+          <!-- <div class="form-element">
           <label for="color">Колір:</label>
           <input type="color" name="color" id="color" />
         </div> -->
-        <!-- 
+          <!-- 
         <div class="form-element">
           <label for="color">Отзив:</label>
           <textarea name="" id="" placeholder="Я важаю, що"></textarea> -->
-        <!-- cols та rows не додають роблять ширину та висоту через CSS -->
-        <!-- </div> -->
+          <!-- cols та rows не додають роблять ширину та висоту через CSS -->
+          <!-- </div> -->
 
-        <div role="group">
-          <ul>
-            <li>
-              <label for="online">Online</label>
-              <input type="radio" id="online" name="event" checked />
-            </li>
-            <li>
-              <label for="offline">Offline</label>
-              <input type="radio" id="offline" name="event" />
-            </li>
-            <li>
-              <label for="mixed">Mixed</label>
-              <input type="radio" id="mixed" name="event" />
-            </li>
-          </ul>
-        </div>
-        <!-- checked отрибут за замовченням -->
+          <div role="group">
+            <ul>
+              <li>
+                <label for="online">Online</label>
+                <input type="radio" id="online" name="event" checked />
+              </li>
+              <li>
+                <label for="offline">Offline</label>
+                <input type="radio" id="offline" name="event" />
+              </li>
+              <li>
+                <label for="mixed">Mixed</label>
+                <input type="radio" id="mixed" name="event" />
+              </li>
+            </ul>
+          </div>
+          <!-- checked отрибут за замовченням -->
 
-        <div role="group">
-          <ul>
-            <li>
-              <label for="cheese">Сир</label>
-              <input type="checkbox" id="cheese" name="pizza" checked />
-            </li>
-            <li>
-              <label for="olive">Олівки</label>
-              <input type="checkbox" id="olive" name="pizza" />
-            </li>
-            <li>
-              <label for="beaf">Колбаса</label>
-              <input type="checkbox" id="beaf" name="pizza" />
-            </li>
-          </ul>
-        </div>
+          <div role="group">
+            <ul>
+              <li>
+                <label for="cheese">Сир</label>
+                <input type="checkbox" id="cheese" name="pizza" checked />
+              </li>
+              <li>
+                <label for="olive">Олівки</label>
+                <input type="checkbox" id="olive" name="pizza" />
+              </li>
+              <li>
+                <label for="beaf">Колбаса</label>
+                <input type="checkbox" id="beaf" name="pizza" />
+              </li>
+            </ul>
+          </div>
 
-        <div class="accepr-checkbox">
-          <input
-            type="checkbox"
-            id="accept"
-            name="accept"
-            required
-            class="input-checkbox"
-          />
+          <div class="accepr-checkbox">
+            <input
+              type="checkbox"
+              id="accept"
+              name="accept"
+              required
+              class="input-checkbox"
+            />
 
-          <label for="accept" class="label-checkbox"
-            ><div class="checkbox">
-              <svg width="12" height="12" class="icon-checkbox">
-                <use
-                  xlink:href="./images/social/sprite.svg#icon-icon-check"
-                ></use>
-              </svg>
-            </div>
-            Я погоджуюсь</label
-          >
-        </div>
+            <label for="accept" class="label-checkbox"
+              ><div class="checkbox">
+                <svg width="12" height="12" class="icon-checkbox">
+                  <use
+                    xlink:href="./images/social/sprite.svg#icon-icon-check"
+                  ></use>
+                </svg>
+              </div>
+              Я погоджуюсь</label
+            >
+          </div>
 
-        <button type="submit" class="form-btn">Відправити</button>
+          <button type="submit" class="form-btn">Відправити</button>
 
-        <button type="reset" class="form-btn">Скинути</button>
-      </form>
-      <!-- Кнопка яка все скидує повинна бути в середині форми-->
+          <button type="reset" class="form-btn">Скинути</button>
+        </form>
+        <!-- Кнопка яка все скидує повинна бути в середині форми-->
+      </div>
     </div>
     <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script> -->
     <script src="./js/modal.js"></script>
-    <!-- Посилання на файл JS -->
   </body>
 </html>

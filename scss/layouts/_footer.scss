@@ -1,0 +1,31 @@
+.footer {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.footer-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.footer-text {
+  color: var(--color-fifth-text);
+}
+
+.footer-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-link {
+  display: flex;
+  color: var(--color-secondary-text);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+}

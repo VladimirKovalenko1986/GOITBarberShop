@@ -1,0 +1,96 @@
+.price {
+  padding: 120px 0;
+  margin: 0 auto;
+  /* центрируем секцию */
+  background-attachment: fixed;
+  /* Делаем background картынки который двигается с экраном */
+  max-width: 1600px;
+  /* Задаем размер секции для того чтобы применить
+   картинку к размеру блока 1600 */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url("../images/pricefone.png"),
+    linear-gradient(#111319, #111319);
+  /* ставим вначале изображение так как цвет без 
+    прозрачности и формат файла фото png */
+  background-color: black;
+  /* страхуемся в случае не загрузки фона */
+}
+
+.price-text {
+  margin-bottom: 20px;
+
+  color: var(--color-fourth-text);
+
+  text-transform: uppercase;
+}
+
+.price-title {
+  margin-bottom: 44px;
+
+  color: var(--color-third-text);
+}
+
+.price-list {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.price-item {
+  width: calc((100% - 30px) / 2);
+  padding: 30px 20px;
+  /* outline: 1px solid white; */
+}
+
+.price-item:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.price-item:first-child {
+  margin-right: 30px;
+
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  /* Взяли из макета backgraund */
+}
+
+.price-pre-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  /* Для того чтобы поставить динию  внижнее положение  */
+}
+
+.price-pre-item::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  margin: 0 12px;
+  /* Добавляем отступы по краям */
+
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.price-pre-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-pre-text {
+  color: var(--color-fifth-text);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.price-pre-text:last-child {
+  order: 1;
+  /* Меняем меставми элемнет, присваивая ему значение */
+}
+
+.price-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: black;
+  color: var(--color-third-text);
+}

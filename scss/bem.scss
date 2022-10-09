@@ -2,39 +2,29 @@
   margin: 10px;
   padding: 10px;
   font-size: 13px;
-  display: flex;
 
   .icon {
     width: 10px;
-    height: 10px;
-    // Обращаемся к иконке которая находится в nav-list
   }
 
-  & .nav-item {
-    margin-left: 30px;
-    // Обращаемся к .nav-item где его отец nav-list
+  .nav-item {
+    color: tomato;
 
-    & .nav-link:hover {
-      color: red;
-      //   Обращаемся к nav-link где отец nav-item
+    &-link {
+      color: yellow;
     }
-  }
-
-  &-link {
-    color: green;
-    //
   }
 
   &:hover {
     color: red;
   }
+
   &::before {
     content: "";
     position: absolute;
-  }
 
-  li {
-    color: aqua;
-    // звертаємось до li який є в тегу .nav-list
+    &:hover {
+      color: yellow;
+    }
   }
 }

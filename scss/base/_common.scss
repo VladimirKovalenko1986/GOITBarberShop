@@ -1,0 +1,61 @@
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--focus-color-text);
+}
+
+.pre-title {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.pre-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  display: block;
+  margin-right: 20px;
+
+  background: currentColor;
+  /* Цвет его отца тоесть .pre-title */
+}
+
+.title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: 1px;
+}
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // outline: 1px solid blue;
+}

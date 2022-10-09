@@ -1,0 +1,83 @@
+.hero {
+  /* background-color: turquoise; */
+}
+
+.hero-conteiner {
+  display: flex;
+}
+
+.hero-social-wrap {
+  width: 90px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-list {
+  width: 100px;
+  display: flex;
+  transform: rotate(-90deg) translate(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-list::before {
+  content: "";
+  height: 1px;
+  width: 60px;
+}
+
+.hero-link {
+  color: var(--color-secondary-text);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.hero-wrapper {
+  padding: 272px 0 208px 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+  /* Даем возможность расширится на всю сторону */
+
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/herofone.jpg");
+  /* Берем значение из макета и добавляем два раза */
+  background-color: black;
+  /* Даем заливку для того чтобы если вдруг не загрузится фото */
+}
+
+.hero-pre-titel {
+  margin-bottom: 20px;
+
+  color: var(-color-fourth-text);
+
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+
+  color: var(--color-third-text);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.hero-text {
+  max-width: 357px;
+
+  color: var(--color-fifth-text);
+
+  font-size: 18px;
+  line-height: 1.7;
+}
