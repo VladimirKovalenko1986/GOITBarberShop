@@ -1,0 +1,14 @@
+// Міксіни
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+body {
+  @include font(14px, 400, 140%);
+}
+
+.hero-title {
+  @include font(16px, 600, 120%);
+}
