@@ -29,10 +29,8 @@
   &-link {
     color: var(--color-secondary-text);
 
-    @include font(11px, 600, 140%);
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.4;
+    @include font(11px, 600, 1.4);
+
     text-transform: uppercase;
   }
 

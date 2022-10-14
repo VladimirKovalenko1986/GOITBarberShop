@@ -1,0 +1,21 @@
+// Шаблони
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  @extend %flex;
+}
+
+// Добавление стилей
+.btn {
+  border: 2px solid tomato;
+  background-color: red;
+}
+
+.button-secces {
+  @extend .btn;
+  //   Можно добавить стили
+}

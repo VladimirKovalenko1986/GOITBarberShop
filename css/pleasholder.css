@@ -1,0 +1,10 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn, .button-secces {
+  border: 2px solid tomato;
+  background-color: red;
+}/*# sourceMappingURL=pleasholder.css.map */
