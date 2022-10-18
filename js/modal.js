@@ -10,6 +10,8 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
+    document.body.classList.toggle("modal-open");
+    // Для модалки чтобы не скролился body
     refs.modal.classList.toggle("is-hidden");
     refs.body.classList.toggle("no-scroll");
   }

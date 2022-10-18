@@ -39,3 +39,9 @@ body {
   line-height: 1.9;
   letter-spacing: 0.02em;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
+// нужно для того чтобы модельное окнов мобильном не
+// скролило body а чтолько модалка
