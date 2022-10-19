@@ -1,34 +1,62 @@
 .master {
-  padding: 120px 0;
+  padding: 84px 0;
 
   background-color: var(--color-bgc-master);
 
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 120px 0;
+  }
+
   &-text {
-    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
 
-    color: var(--color-secondary-text);
+    // display: flex;
+    // align-items: center;
 
-    text-transform: uppercase;
+    // margin-bottom: 20px;
+
+    // color: var(--color-secondary-text);
+
+    // text-transform: uppercase;
   }
 
   &-title {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
     margin-bottom: 45px;
 
-    color: var(--color-secondary-text);
+    // color: var(--color-secondary-text);
   }
 
   &-list {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width: 1600px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &-item {
-    width: calc((100% - 60px) / 3);
+    @media screen and (min-width: 1600px) {
+      width: calc((100% - 60px) / 3);
+    }
+
     // Формула сетки 60 это два отступа по 30 3 это три
     //  элемента в строке
 
     &:not(:first-child) {
-      margin-left: 30px;
+      @media screen and (min-width: 1600px) {
+        margin-left: 30px;
+      }
+
       // Добавили с левой стороны по 30 кроме первого
     }
     &:hover .master-details {
@@ -43,7 +71,7 @@
 
   &-img {
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
 
   &-details {
@@ -90,10 +118,9 @@
     height: 44px;
     border-radius: 50%;
 
-    @extend %flexCenter;
     // генерируется после того де стоит в main.scss
 
-    // @include centered-flex;
+    @include centered-flex;
     background-color: var(--color-third-text);
 
     &:not(:last-child) {
@@ -102,7 +129,13 @@
   }
 
   &-link-social {
-    display: flex;
+    @extend %flexCenter;
+
+    // &:hover {
+    //   @media screen and (min-width: 768px) {
+    //     background-color: red;
+    //   }
+    // Робимо ховер тільки на планшет
   }
 
   &-icon-svg:hover {
